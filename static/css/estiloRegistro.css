@@ -1,0 +1,87 @@
+:root{
+    --colorTextos:#0f0f0f67;
+
+}
+
+*,
+::before,
+::after {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Darle color al fondo*/
+
+body{
+    font-family: 'Roboto';
+    background: #6a9113;
+    background: -webkit-linear-gradient(to right, #6a9113, #141517);
+    background: linear-gradient(to right,#6a9113, #141517);
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Centrar los campos*/
+h1{
+    text-align: center;
+    font-weight: 90px;
+}
+
+/*Poner cuadro blanco detras de cuadros de registros*/
+form{
+    background: #fff;
+    padding: 40px 0;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+/*Se forme campos dentro de campo blanco*/
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+form .row{
+    position: relative;
+    margin: 10px ;
+}
+
+input{
+    background: none;
+    color:#000000;
+    font-size:11px;
+    padding: 7px 7px 7px 4px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+label{
+    color: var(--colorTextos);
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+
+input:focus~label{
+    top: -14px;
+    font-size: 12px;
+    color: #2196f3;
+}
+
+button{
+    font-family: 'roboto';
+    border: none;
+    background: #bdbcd6;
+    background: -webkit-linear-gradient(to right, #bdbcd6, #b6d8ee);
+    background: linear-gradient(to right,#bdbcd6, #b6d8ee);
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    color:#000000;
+    height: 40px;
+    cursor:pointer;
+    border-radius: 8px;
+
+}
