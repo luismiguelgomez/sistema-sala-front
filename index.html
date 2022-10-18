@@ -1,4 +1,5 @@
 <html>
+<script src="static/js/validar.js"></script>
 
 <head>
   <title>Sistema SALA: Universidad el Bosque</title>
@@ -21,20 +22,24 @@
 </head>
 
 <body>
-  <div class="modal-dialog text-center">
+  <div class="modal-dialog text-center" id="contender_principal">
     <div class="col-sm-8 main-section">
       <div class="modal-content">
         <div class="col-12 ubosque-img">
           <img src="static/img/ubosque.png" />
         </div>
-        <form class="col-12">
+        <!-- Formulario de login -->
+        <form class="contenedor_login">
           <div class="form-group" id="user-group">
-            <input type="text" class="form-control" placeholder="Correo Institucional" />
+            <input type="text" id="email" class="form-control" pattern=".+@" required
+              placeholder="Correo Institucional" />
           </div>
           <div class="form-group" id="contrasena-group">
-            <input type="password" class="form-control" placeholder="Contraseña" />
+            <input type="password" id="contrasena" class="form-control" minlength="1" placeholder="Contraseña" />
           </div>
-          <button type="submit" class="btn btn-primary" id="login-group"><i class="fas fa-sign-in alt"></i> Ingresar</button>
+          <button onclick="validar()" type="submit" class="btn btn-primary" required id="login-group"><i
+              class="fas fa-sign-in alt"></i> Ingresar</button>
+
         </form>
         <div class="col-12 forgot-password">
           <a href="#">¿Olvido su contraseña?</a>
@@ -43,4 +48,5 @@
     </div>
   </div>
 </body>
+
 </html>
