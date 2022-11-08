@@ -1,7 +1,7 @@
 function validar() {
   var todo_en_orden = true;
 
-  if ((document.getElementById("contrasena").value.lenght = 0)) {
+  if ((document.getElementById("contrasena").value.length = 0)) {
     todo_en_orden = false;
   }
 }
