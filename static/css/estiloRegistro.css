@@ -71,17 +71,5 @@ input:focus~label{
 }
 
 button{
-    font-family: 'roboto';
-    border: none;
-    background: #bdbcd6;
-    background: -webkit-linear-gradient(to right, #bdbcd6, #b6d8ee);
-    background: linear-gradient(to right,#bdbcd6, #b6d8ee);
-    display: block;
-    width: 90%;
-    margin: 10px auto;
-    color:#000000;
-    height: 40px;
-    cursor:pointer;
-    border-radius: 8px;
-
+   
 }
