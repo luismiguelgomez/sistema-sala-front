@@ -31,19 +31,19 @@ h1{
 }
 
 /*Poner cuadro blanco detras de cuadros de registros*/
-form{
+#form{
     background: #fff;
     padding: 40px 0;
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
     border-radius: 10px;
 }
 /*Se forme campos dentro de campo blanco*/
-.form{
+#form{
     width: 100%;
     margin: auto;
 }
 
-form .row{
+#form .row{
     position: relative;
     margin: 10px ;
 }

@@ -4,11 +4,11 @@
   <title>Sistema SALA: Universidad el Bosque</title>
 
   <!-- JQUERY -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
 
   <!--FRAMEWORK BOOTSTRAP-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https: //maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
   </script>
 
   <!-- Iconos -->
@@ -16,7 +16,8 @@
 
   <!-- CSS-->
   <link rel="stylesheet" type="text/css" href="static/css/index.css">
-
+  <script src="../sistema-sala-front/js/axios.js"></script>
+  <script src="../sistema-sala-front/js/all.js"></script>
 
 </head>
 
@@ -27,20 +28,23 @@
         <div class="col-12 ubosque-img">
           <img src="static/img/ubosque.png" />
         </div>
-        <form class="col-12">
+        <div class="col-12">
           <div class="form-group" id="user-group">
-            <input type="text" class="form-control" placeholder="Correo Institucional" />
+            <input type="text" class="form-control" placeholder="Correo Institucional" id="InputEmail">
           </div>
           <div class="form-group" id="contrasena-group">
-            <input type="password" class="form-control" placeholder="Contraseña" />
+            <input type="password" class="form-control" placeholder="Contraseña" id="InputPassword">
           </div>
-          <button type="submit" class="btn btn-primary" id="login-group"><i class="fas fa-sign-in alt"></i> Ingresar</button>
-        </form>
-        <div class="col-12 forgot-password">
-          <a href="#">¿Olvido su contraseña?</a>
+          <div>
+            <button onclick="post()" class="btn btn-primary"><i class="fas fa-sign-in alt"></i>
+              Ingresar</button>
+          </div>
+          <div class="col-12 forgot-password">
+            <a href="#">¿Olvido su contraseña?</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 </body>
+
 </html>
